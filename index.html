@@ -9,13 +9,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap"
-            rel="stylesheet" />
+            rel="stylesheet"
+        />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
             integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
             crossorigin="anonymous"
-            referrerpolicy="no-referrer" />
+            referrerpolicy="no-referrer"
+        />
         <title>Wahane</title>
     </head>
     <body id="top">
@@ -31,7 +33,7 @@
         </div>
         <!--1 img sec-->
         <div class="container" id="container01">
-            <div class="hero">
+            <div class="hero rellax" data-rellax-speed="5">
                 <h1>Brand New Mk1 & Mk2</h1>
                 <h3>Road, Track or Rally</h3>
                 <h5>A true classic with a modern twist</h5>
@@ -39,7 +41,7 @@
         </div>
         <!--2 img sec-->
         <div class="container" id="container02">
-            <div class="hero">
+            <div class="hero rellax" data-rellax-speed="2.5">
                 <h1>Brand New Mk1 & Mk2</h1>
                 <h3>Road, Track or Rally</h3>
                 <h5>A true classic with a modern twist</h5>
@@ -48,7 +50,7 @@
         </div>
         <!--3 img sec-->
         <div class="container" id="container03">
-            <div class="hero">
+            <div class="hero rellax" data-rellax-speed="1.25">
                 <h1>Brand New Mk1 & Mk2</h1>
                 <h3>Road, Track or Rally</h3>
                 <h5>A true classic with a modern twist</h5>
@@ -70,25 +72,29 @@
                             name="name"
                             id="name"
                             required
-                            placeholder="Enter your name" />
+                            placeholder="Enter your name"
+                        />
                         <input
                             type="email"
                             name="email"
                             id="email"
                             required
-                            placeholder="Enter your email" />
+                            placeholder="Enter your email"
+                        />
                         <input
                             type="text"
                             name="subject"
                             id="subject"
                             required
-                            placeholder="What is this query about" />
+                            placeholder="What is this query about"
+                        />
                         <input
                             type="text"
                             name="message"
                             id="v"
                             required
-                            placeholder="Enter your message" />
+                            placeholder="Enter your message"
+                        />
                         <input type="submit" />
                     </form>
                 </div>
@@ -115,5 +121,10 @@
                 <img src="./img/up.svg" />
             </a>
         </div>
+        <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+        <script>
+            // Accepts any class name
+            var rellax = new Rellax(".rellax");
+        </script>
     </body>
 </html>

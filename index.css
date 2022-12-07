@@ -8,6 +8,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    perspective: 1px;
+}
+
 .container {
     height: 100vh;
     width: 100%;
