@@ -5,16 +5,17 @@
 }
 body {
     background-image: linear-gradient(
-            rgba(29, 29, 29, 0.66),
-            rgba(29, 29, 29, 0.66)
+            rgba(42, 42, 42, 0.803),
+            rgba(41, 41, 41, 0.697)
         ),
-        url(sec01/04.jpg);
+        url("img about us/about us bg 02.jpg");
     height: 100vh;
     width: 100%;
     background-position: center;
     background-size: cover;
     box-sizing: border-box;
     position: relative;
+    background-attachment: fixed;
 }
 
 .card-container {
@@ -25,6 +26,19 @@ body {
     justify-content: space-evenly;
     flex-wrap: nowrap;
     align-items: center;
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+#card-container01 {
+    background-image: linear-gradient(
+            rgba(29, 29, 29, 0.745),
+            rgba(29, 29, 29, 0.7)
+        ),
+        url("img about us/about us bg 01.jpg");
 }
 
 .card-container .card {
