@@ -50,27 +50,31 @@
                     <h2>New Tickets</h2>
                     <div class="container" id="request-list">
                         <div class="card">
+                            <div class="card-header">
+                                #Number - Message Subject
+                            </div>
                             <div class="card-body">
-                                <h5 class="card-title">
-                                    Ticket #Number - Message Subject
-                                </h5>
+                                <h4 class="card-title">Name of the user</h4>
                                 <p class="card-text">
                                     Message content with the problem the user
                                     has
                                 </p>
+                            </div>
+                            <div class="card-footer text-muted">
                                 <div
-                                    class="container"
-                                    id="card-button-container"
+                                    class="btn-group"
+                                    role="group"
+                                    aria-label="Basic mixed styles example"
                                 >
-                                    <a href="#" class="btn btn-primary"
-                                        >Send Email</a
-                                    >
-                                    <a href="#" class="btn btn-success"
-                                        >Mark as Done</a
-                                    >
-                                    <a href="#" class="btn btn-danger"
-                                        >Delete Ticket</a
-                                    >
+                                    <button type="button" class="btn btn-link">
+                                        Send Email
+                                    </button>
+                                    <button type="button" class="btn btn-link">
+                                        Mark as Completed
+                                    </button>
+                                    <button type="button" class="btn btn-link">
+                                        Delete
+                                    </button>
                                 </div>
                             </div>
                         </div>
