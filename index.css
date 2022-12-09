@@ -112,6 +112,13 @@ btn:active {
     box-sizing: border-box;
     padding: 0 18px;
 }
+#contact div#top .card form input#submit-btn {
+    background-color: aqua;
+    transition: 0.2s ease-in-out;
+}
+#contact div#top .card form input#submit-btn:hover {
+    scale: 1.05;
+}
 
 #contact div#bottom #smcontainer {
     display: flex;
