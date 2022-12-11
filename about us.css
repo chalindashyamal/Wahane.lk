@@ -4,11 +4,6 @@
     font-family: "Orbitron", sans-serif;
 }
 body {
-    background-image: linear-gradient(
-            rgba(42, 42, 42, 0.803),
-            rgba(41, 41, 41, 0.697)
-        ),
-        url("img about us/about us bg 02.jpg");
     height: 100vh;
     width: 100%;
     background-position: center;
@@ -33,12 +28,22 @@ body {
     box-sizing: border-box;
     position: relative;
 }
+.card-container {
+    background-image: linear-gradient(
+            rgba(42, 42, 42, 0.803),
+            rgba(41, 41, 41, 0.697)
+        ),
+        url("img about us/about us bg 02.jpg");
+    background-attachment: fixed;
+}
+
 #card-container01 {
     background-image: linear-gradient(
             rgba(29, 29, 29, 0.745),
             rgba(29, 29, 29, 0.7)
         ),
         url("img about us/about us bg 01.jpg");
+    background-attachment: fixed;
 }
 
 .card-container .card {
@@ -97,4 +102,33 @@ body {
 }
 .card-img:hover {
     scale: 1.1;
+}
+
+/*.bg-video {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    object-fit: cover;
+}*/
+
+.about-us-uni {
+    background-image: linear-gradient(
+            rgba(11, 3, 44, 0.588),
+            rgba(21, 17, 42, 0.534)
+        ),
+        url("img about us/uni\ 01.webp");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+.about-us-uni h1 {
+    height: 100%;
+    color: rgb(0, 0, 0);
+    font-size: 4em;
+}
+.about-us-uni p {
 }
