@@ -17,8 +17,8 @@ body {
 
 .about-us-uni {
     background-image: linear-gradient(
-            rgba(11, 3, 44, 0.588),
-            rgba(21, 17, 42, 0.534)
+            rgba(11, 3, 44, 0.79),
+            rgba(21, 17, 42, 0.74)
         ),
         url("university/uni\ 01.webp");
     width: 100%;
@@ -29,7 +29,7 @@ body {
 }
 
 .about-us-uni .card {
-    background-color: rgba(255, 255, 255, 0.616);
+    background-color: rgba(255, 255, 255, 0.477);
     padding: 2em;
     gap: 1em;
     border-radius: 1em;
@@ -49,7 +49,7 @@ body {
     transition: 0.5s ease-in-out;
 }
 .btn:hover {
-    scale: 1;
+    scale: 1.03;
 }
 p {
     font-family: "Montserrat", sans-serif;
