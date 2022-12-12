@@ -1,0 +1,25 @@
+#request-list {
+    display: flex;
+    flex-direction: column;
+    gap:0.5em;
+}
+
+#ticket-col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.card-footer {
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+}

@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Orbitron", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    perspective: 1px;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#container01 {
+    background-image: linear-gradient(
+            rgba(11, 3, 44, 0.588),
+            rgba(21, 17, 42, 0.534)
+        ),
+        url(img/02.jpg);
+    background-attachment: fixed;
+}
+
+#container02 {
+    background-image: linear-gradient(
+            rgba(11, 3, 44, 0.588),
+            rgba(21, 17, 42, 0.534)
+        ),
+        url(img/04.jpg);
+    background-attachment: fixed;
+}
+.btn {
+    font-size: 10px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.585);
+    width: 100px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    color: rgb(0, 255, 221);
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover,
+.btn:focus,
+btn:active {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#container03 {
+    background-image: linear-gradient(
+            rgba(11, 3, 44, 0.588),
+            rgba(21, 17, 42, 0.534)
+        ),
+        url(img/03.jpg);
+    background-attachment: fixed;
+}
+#contact {
+    background-image: linear-gradient(
+            rgba(11, 3, 44, 0.588),
+            rgba(21, 17, 42, 0.534)
+        ),
+        url(img/05.jpg);
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+#contact div#top {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#contact div#top .card form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1em;
+}
+#contact div#top .card form input {
+    border: none;
+    outline: none;
+    display: inline-block;
+    height: 34px;
+    vertical-align: middle;
+    border-radius: 22px;
+    width: 220px;
+    box-sizing: border-box;
+    padding: 0 18px;
+}
+#contact div#top .card form input#submit-btn {
+    background-color: aqua;
+    transition: 0.2s ease-in-out;
+}
+#contact div#top .card form input#submit-btn:hover {
+    scale: 1.05;
+}
+
+#contact div#bottom #smcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+#contact div#bottom #smcontainer a i {
+    color: white;
+    font-size: 3em;
+    transition: 0.2s;
+    padding: 0.2em;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20%;
+}
+#contact div#bottom #smcontainer a i:hover {
+    color: black;
+    font-size: 3em;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.nav {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.nav .logo {
+    width: 150px;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+}
+.nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    position: relative;
+    padding: 5px 20px;
+    border: 0;
+    transition-duration: 0.1s;
+}
+.nav ul li a:hover {
+    border-bottom: 2px rgb(255, 0, 0) solid;
+}
+
+.hero {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 4em;
+    max-width: 8em;
+}
+
+.hero h3 {
+    font-size: 2em;
+}
+
+.hero h5 {
+    font-size: 1em;
+}
+/*scroll up start*/
+
+.scroll-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+.scroll-container::before {
+    content: "";
+    display: block;
+    height: 100vh;
+    pointer-events: none;
+}
+.scroll-container a {
+    position: sticky;
+    top: 95vh;
+    cursor: pointer;
+}
+.scroll-container img {
+    width: 35px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(66deg)
+        brightness(104%) contrast(106%);
+}
+/*end*/
+
+.footer {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(2, 25, 25, 0.801);
+}
+
+.footer .text {
+    text-align: center;
+    padding-top: 30px;
+    color: #fff;
+}
