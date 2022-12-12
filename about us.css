@@ -115,20 +115,4 @@ body {
     object-fit: cover;
 }*/
 
-.about-us-uni {
-    background-image: linear-gradient(
-            rgba(11, 3, 44, 0.588),
-            rgba(21, 17, 42, 0.534)
-        ),
-        url("img about us/uni\ 01.webp");
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-}
-.about-us-uni h1 {
-    height: 100%;
-    color: rgb(0, 0, 0);
-    font-size: 4em;
-}
-.about-us-uni p {
-}
+

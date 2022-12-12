@@ -202,13 +202,25 @@ btn:active {
 }
 
 .scroll-container {
-    position: fixed;
-    bottom: 1em;
-    right: 1em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
 }
 
-.scroll-container a img {
-    background: white;
-    border-radius: 50%;
-    padding: 0.5em;
+.scroll-container::before {
+    content: "";
+    display: block;
+    height: 100vh;
+    pointer-events: none;
+}
+.scroll-container a {
+    position: sticky;
+    top: 95vh;
+    cursor: pointer;
+}
+.scroll-container img {
+    width: 35px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(66deg)
+        brightness(104%) contrast(106%);
 }
