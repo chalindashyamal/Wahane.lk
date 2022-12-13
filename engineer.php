@@ -100,7 +100,7 @@
                         die("Connection failed: " . $conn->connect_error);
                     }
 
-                    $sql = "SELECT * FROM complaint WHERE completed = 0";
+                    $sql = "SELECT * FROM complaint WHERE e_stat = 1 AND e_comp = 0";
                     $result = $conn->query($sql);
 
                     if ($result->num_rows > 0) {
@@ -121,12 +121,12 @@
                                     class='btn-group'
                                     role='group'
                                     aria-label='Basic mixed styles example'
-                                >
-                                    
-                                    <a href='/allowEngineer.php?id=".$row["Complaint_ID"]."' type='button' class='btn btn-link'>
-                                        Send To Engineer
+                                >   
+
+                                    <a href='mailto:".$row["Customer_email"]."' type='button' class='btn btn-link'>
+                                        Email Customer
                                     </a>
-                                    <a href='/updateComplaint.php?id=".$row["Complaint_ID"]."' type='button' class='btn btn-link'>
+                                    <a href='/eupdateComplaint.php?id=".$row["Complaint_ID"]."' type='button' class='btn btn-link'>
                                         Mark as Completed
                                     </a>
                                     <a href='/deleteComplaint.php?id=".$row["Complaint_ID"]."' type='button' class='btn btn-link'>
@@ -174,7 +174,7 @@
                         die("Connection failed: " . $conn->connect_error);
                     }
 
-                    $sql = "SELECT * FROM complaint WHERE completed = 1";
+                    $sql = "SELECT * FROM complaint WHERE e_comp = 1";
 
                     $result = $conn->query($sql);
 
