@@ -1,8 +1,13 @@
 <?php
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $database = "Wahane.net";
+
 $servername = "localhost";
-$username = "root";
-$password = "";
-$database = "wahane.lk";
+$username = "wahanene_admin";
+$password = "f,N}{FOuvs,t";
+$database = "wahanene_wahane.net";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);
@@ -29,5 +34,5 @@ if ($conn-> query($sql) === TRUE) {
 
 $conn->close();
 
-header('Location: admin.php');
+header('Location: engineer.php');
 ?>

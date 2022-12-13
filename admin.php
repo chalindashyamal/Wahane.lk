@@ -17,7 +17,7 @@
         <!-- Navigation bar -->
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/admin.html">Wahane.lk Admin</a>
+                <a class="navbar-brand" href="/admin.html">Wahane.net Admin</a>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -88,9 +88,9 @@
 
                     // Get all the tickets from the database where completed = 0 and display them as cards
                     $servername = "localhost";
-                    $username = "root";
-                    $password = "";
-                    $database = "wahane.lk";
+                    $username = "wahanene_admin";
+                    $password = "f,N}{FOuvs,t";
+                    $database = "wahanene_wahane.net";
 
                     // Create connection
                     $conn = new mysqli($servername, $username, $password, $database);
@@ -162,9 +162,9 @@
                         */
 
                         $servername = "localhost";
-                    $username = "root";
-                    $password = "";
-                    $database = "wahane.lk";
+                        $username = "wahanene_admin";
+                        $password = "f,N}{FOuvs,t";
+                        $database = "wahanene_wahane.net";
 
                     // Create connection
                     $conn = new mysqli($servername, $username, $password, $database);

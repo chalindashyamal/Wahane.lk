@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Admin Panel</title>
+        <title>Engineer Panel</title>
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -17,7 +17,7 @@
         <!-- Navigation bar -->
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/admin.html">Wahane.lk Admin</a>
+                <a class="navbar-brand" href="/admin.html">Wahane.net Engineer</a>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -88,9 +88,9 @@
 
                     // Get all the tickets from the database where completed = 0 and display them as cards
                     $servername = "localhost";
-                    $username = "root";
-                    $password = "";
-                    $database = "wahane.lk";
+                    $username = "wahanene_admin";
+                    $password = "f,N}{FOuvs,t";
+                    $database = "wahanene_wahane.net";
 
                     // Create connection
                     $conn = new mysqli($servername, $username, $password, $database);
@@ -162,9 +162,9 @@
                         */
 
                         $servername = "localhost";
-                    $username = "root";
-                    $password = "";
-                    $database = "wahane.lk";
+                        $username = "wahanene_admin";
+                        $password = "f,N}{FOuvs,t";
+                        $database = "wahanene_wahane.net";
 
                     // Create connection
                     $conn = new mysqli($servername, $username, $password, $database);

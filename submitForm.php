@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
-$database = "wahane.lk";
+$username = "wahanene_admin";
+$password = "f,N}{FOuvs,t";
+$database = "wahanene_wahane.net";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);
