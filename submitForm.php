@@ -30,6 +30,6 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
-header('Location: success.html');
+header('Location: success.php?message=Complaint Submitted Successfully');
 ?>
 
