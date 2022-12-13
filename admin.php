@@ -108,12 +108,12 @@
                         while($row = $result->fetch_assoc()) {
                             echo "<div class='card'>
                             <div class='card-header'>
-                                #".$row["id"]." - ".$row["subject"]."
+                                #".$row["Complaint_ID"]." - ".$row["Subject"]."
                             </div>
                             <div class='card-body'>
-                                <h4 class='card-title '>".$row["name"]."</h4>
+                                <h4 class='card-title '>".$row["Customer_name"]."</h4>
                                 <p class='card-text'>
-                                    ".$row["message"]."
+                                    ".$row["Message"]."
                                 </p>
                             </div>
                             <div class='card-footer text-muted'>
@@ -122,13 +122,13 @@
                                     role='group'
                                     aria-label='Basic mixed styles example'
                                 >
-                                    <a href='/sendEmail.php?message=".$row["message"]."&email=".$row["email"]."&name=".$row["name"]."&subject=".$row["subject"]."' type='button' class='btn btn-link'>
+                                    <a href='/sendEmail.php?message=".$row["Message"]."&email=".$row["Customer_email"]."&name=".$row["Customer_name"]."&subject=".$row["Subject"]."' type='button' class='btn btn-link'>
                                         Send Email
                                     </a>
-                                    <a href='/updateComplaint.php?id=".$row["id"]."' type='button' class='btn btn-link'>
+                                    <a href='/updateComplaint.php?id=".$row["Complaint_ID"]."' type='button' class='btn btn-link'>
                                         Mark as Completed
                                     </a>
-                                    <a href='/deleteComplaint.php?id=".$row["id"]."' type='button' class='btn btn-link'>
+                                    <a href='/deleteComplaint.php?id=".$row["Complaint_ID"]."' type='button' class='btn btn-link'>
                                         Delete
                                     </a>
                                 </div>
@@ -183,10 +183,10 @@
                             echo "<div class='card'>
                             <div class='card-body'>
                                 <h5 class='card-title '>
-                                    Ticket #".$row["id"]." - ".$row["subject"]." 
+                                    Ticket #".$row["Complaint_ID"]." - ".$row["Subject"]." 
                                 </h5>
                                 <p class='card-text'>
-                                    ".$row["message"]."     
+                                    ".$row["Message"]."     
                                 </p>
                             </div>
                         </div>";

@@ -7,7 +7,7 @@ $database = "wahane.lk";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);
 
-$complaintID = $_POST["id"];
+$complaintID = $_GET["id"];
 
 echo "Received $complaintID -> Marking as Resolved";
 
@@ -29,6 +29,5 @@ if ($conn-> query($sql) === TRUE) {
 
 $conn->close();
 
-header('Location: success.php?message=Complaint Marked as Resolved Successfully');
-
+header('Location: admin.php');
 ?>
