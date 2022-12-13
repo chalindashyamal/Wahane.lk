@@ -7,7 +7,7 @@ $database = "wahane.lk";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);
 
-$complaintID = $_POST["complaintID"];
+$complaintID = $_POST["id"];
 
 echo "Received $complaintID -> Marking as Resolved";
 
