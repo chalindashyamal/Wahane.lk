@@ -9,17 +9,20 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap"
-            rel="stylesheet" />
+            rel="stylesheet"
+        />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
             integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
             crossorigin="anonymous"
-            referrerpolicy="no-referrer" />
+            referrerpolicy="no-referrer"
+        />
         <title>Wahane</title>
         <script
             src="https://kit.fontawesome.com/20ccd3235c.js"
-            crossorigin="anonymous"></script>
+            crossorigin="anonymous"
+        ></script>
     </head>
     <body id="top">
         <div class="nav">
@@ -31,9 +34,9 @@
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Cars</a></li>
                 <li><a href="/university.html">About University</a></li>
-                <i class="fa-solid fa-xmark"></i>
             </ul>
-            <i class="fa-solid fa-bars"></i>
+            <!-- Added Menu Button -->
+            <i id="menuButton" class="fa-solid fa-bars"></i>
         </div>
         <!--1 img sec-->
         <div class="container" id="container01">
@@ -76,25 +79,29 @@
                             name="name"
                             id="name"
                             required
-                            placeholder="Enter your name" />
+                            placeholder="Enter your name"
+                        />
                         <input
                             type="email"
                             name="email"
                             id="email"
                             required
-                            placeholder="Enter your email" />
+                            placeholder="Enter your email"
+                        />
                         <input
                             type="text"
                             name="subject"
                             id="subject"
                             required
-                            placeholder="What is this query about" />
+                            placeholder="What is this query about"
+                        />
                         <input
                             type="text"
                             name="message"
                             id="v"
                             required
-                            placeholder="Enter your message" />
+                            placeholder="Enter your message"
+                        />
                         <input type="submit" id="submit-btn" />
                     </form>
                 </div>
@@ -127,6 +134,42 @@
                 <img src="./img/up.svg" />
             </a>
         </div>
+
+        <!-- Added Mobile Menu Modal And Script -->
+        <div class="modal hideMenu" id="mobileMenu">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Menu</h2>
+                    <i id="closeMenu" class="fa-solid fa-times"></i>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/index.html#contact">Contact</a></li>
+                        <li><a href="about us.html">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Cars</a></li>
+                        <li><a href="/university.html">About University</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const menuButton = document.getElementById("menuButton");
+            const mobileMenu = document.getElementById("mobileMenu");
+            const closeMenu = document.getElementById("closeMenu");
+
+            menuButton.addEventListener("click", () => {
+                mobileMenu.classList.add("showMenu");
+                mobileMenu.classList.remove("hideMenu");
+            });
+
+            closeMenu.addEventListener("click", () => {
+                mobileMenu.classList.remove("showMenu");
+                mobileMenu.classList.add("hideMenu");
+            });
+        </script>
 
         <!-- Added Rellax Library -->
         <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>

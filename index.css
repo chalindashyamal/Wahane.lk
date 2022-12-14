@@ -155,6 +155,10 @@ btn:active {
     align-items: center;
 }
 
+.nav #menuButton {
+    display: none;
+}
+
 .nav .logo {
     width: 150px;
 }
@@ -237,8 +241,66 @@ btn:active {
     padding-top: 30px;
     color: #fff;
 }
-/*css for small screen*/
-@media only screen and (max-width: 600px) {
+
+.showMenu {
+    display: block;
+}
+
+.hideMenu {
+    display: none;
+}
+
+.modal#mobileMenu {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: white;
+}
+
+.modal#mobileMenu .modal-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 2.5em;
+}
+
+.modal#mobileMenu .modal-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1em;
+}
+
+.modal#mobileMenu .modal-body ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.modal#mobileMenu .modal-body ul li {
+    padding: 1em;
+}
+
+.modal#mobileMenu .modal-body ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* media quary for tab */
+@media only screen and (max-width: 950px) {
     #container01 {
         background-image: linear-gradient(
                 rgba(11, 3, 44, 0.588),
@@ -256,10 +318,13 @@ btn:active {
         gap: 1.5em;
         color: #fff;
         margin-left: 2em;
+        align-items: center;
+        flex-wrap: nowrap;
     }
+
     .hero h1 {
         font-size: 2em;
-        max-width: 4em;
+        max-width: 75vw;
     }
 
     .hero h3 {
@@ -268,5 +333,25 @@ btn:active {
 
     .hero h5 {
         font-size: 0.6em;
+    }
+
+    .nav #menuButton {
+        display: block;
+        color: white;
+        padding: 1em;
+        font-size: 2em;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    #contact div#top {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
     }
 }
