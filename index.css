@@ -237,3 +237,36 @@ btn:active {
     padding-top: 30px;
     color: #fff;
 }
+/*css for small screen*/
+@media only screen and (max-width: 600px) {
+    #container01 {
+        background-image: linear-gradient(
+                rgba(11, 3, 44, 0.588),
+                rgba(21, 17, 42, 0.534)
+            ),
+            url(img/02.jpg);
+        background-attachment: fixed;
+    }
+
+    .hero {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5em;
+        color: #fff;
+        margin-left: 2em;
+    }
+    .hero h1 {
+        font-size: 2em;
+        max-width: 4em;
+    }
+
+    .hero h3 {
+        font-size: 1em;
+    }
+
+    .hero h5 {
+        font-size: 0.6em;
+    }
+}
