@@ -1,70 +1,47 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Orbitron", sans-serif;
-}
-body {
+.parent {
+    padding-top: 5em;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    min-height: 100vh;
     background-image: linear-gradient(
-            rgba(33, 31, 31, 0.859),
-            rgba(16, 15, 15, 0.792)
+            rgba(11, 3, 44, 0.588),
+            rgba(21, 17, 42, 0.534)
         ),
-        url(sec02/miko-pogosyan-c7E7azniSTU-unsplash.jpg);
-    height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    box-sizing: border-box;
-    position: relative;
+        url(aboutImg/about\ us\ bg\ 02.jpg);
+
+    place-items: center;
 }
 
-.card-container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
-    align-items: center;
+.about-card {
+    background: #06ddf9bc;
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    text-align: center;
+    min-width: 250px;
+    min-height: 400px;
+    margin: 2em;
+    background-image: linear-gradient(
+            rgba(57, 53, 72, 0.242),
+            rgba(54, 51, 71, 0.296)
+        ),
+        url(sec02/001.jpg);
 }
 
-.card-container .card {
-    background: white;
-    width: 20%;
-    height: 25em;
-    padding: 2em;
-    border-radius: 20px;
+.about-card p {
     color: aliceblue;
-    transition: 0.2s ease-in-out;
 }
 
-.card-container .card:hover {
-    scale: 1.05;
+/*.about-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 1em;
+    object-fit: cover;
 }
 
-.card:nth-child(1) {
-    background-image: linear-gradient(
-            rgba(11, 3, 44, 0.588),
-            rgba(21, 17, 42, 0.534)
-        ),
-        url("/sec02/001.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.card:nth-child(2) {
-    background-image: linear-gradient(
-            rgba(11, 3, 44, 0.588),
-            rgba(21, 17, 42, 0.534)
-        ),
-        url("/sec02/002.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.card:nth-child(3) {
-    background-image: linear-gradient(
-            rgba(11, 3, 44, 0.588),
-            rgba(21, 17, 42, 0.534)
-        ),
-        url("/sec02/003.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+.about-card h5 {
+    color: rgb(181, 181, 181);
+    margin-bottom: 1em;
+}*/
