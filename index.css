@@ -183,6 +183,18 @@ btn:active {
     border-bottom: 2px rgb(255, 0, 0) solid;
 }
 
+.nav ul:nth-child(3) {
+    position: absolute;
+    top: 7em;
+    right: 20vw;
+}
+
+.nav ul:nth-child(4) {
+    position: absolute;
+    top: 7em;
+    right: 6.5vw;
+}
+
 .hero {
     height: 100%;
     display: flex;
@@ -247,7 +259,7 @@ btn:active {
 }
 
 .hideMenu {
-    display: none;
+    display: none !important;
 }
 
 .modal#mobileMenu {
