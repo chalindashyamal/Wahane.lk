@@ -186,13 +186,23 @@ btn:active {
 .nav ul:nth-child(3) {
     position: absolute;
     top: 7em;
-    right: 20vw;
+    right: 11em;
+
+    background-color: slategray;
+    color: black;
+    padding: 2em;
+    border-radius: 1em;
 }
 
 .nav ul:nth-child(4) {
     position: absolute;
     top: 7em;
-    right: 6.5vw;
+    right: 2em;
+
+    background-color: slategray;
+    color: black;
+    padding: 2em;
+    border-radius: 1em;
 }
 
 .hero {

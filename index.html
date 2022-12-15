@@ -9,17 +9,20 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap"
-            rel="stylesheet" />
+            rel="stylesheet"
+        />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
             integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
             crossorigin="anonymous"
-            referrerpolicy="no-referrer" />
+            referrerpolicy="no-referrer"
+        />
         <title>Wahane</title>
         <script
             src="https://kit.fontawesome.com/20ccd3235c.js"
-            crossorigin="anonymous"></script>
+            crossorigin="anonymous"
+        ></script>
     </head>
     <body id="top">
         <div class="nav">
@@ -32,6 +35,7 @@
                 <li><a id="carsDropTrig" href="#">Cars</a></li>
                 <li><a href="/university.html">About University</a></li>
             </ul>
+            <!-- Dropdown -->
             <ul class="hideMenu" id="serviceDropdown">
                 <li><a href="#">Help</a></li>
                 <li><a href="#">Info</a></li>
@@ -86,25 +90,29 @@
                             name="name"
                             id="name"
                             required
-                            placeholder="Enter your Vehicle Model" />
+                            placeholder="Enter your Vehicle Model"
+                        />
                         <input
                             type="email"
                             name="email"
                             id="email"
                             required
-                            placeholder="Enter your email" />
+                            placeholder="Enter your email"
+                        />
                         <input
                             type="text"
                             name="subject"
                             id="subject"
                             required
-                            placeholder="What is this query about" />
+                            placeholder="What is this query about"
+                        />
                         <input
                             type="text"
                             name="message"
                             id="v"
                             required
-                            placeholder="Enter your message" />
+                            placeholder="Enter your message"
+                        />
                         <input type="submit" id="submit-btn" />
                     </form>
                 </div>
@@ -174,22 +182,36 @@
             });
         </script>
 
-        <!-- Dropdown Trigger -->
+        <!-- Dropdown Function -->
         <script>
             function addDropTrig(triggerID, contentID) {
-                const menuButton = document.getElementById("menuButton");
-                const mobileMenu = document.getElementById("mobileMenu");
+                const menuButton = document.getElementById(triggerID);
+                const contentSection = document.getElementById(contentID);
 
                 menuButton.addEventListener("click", () => {
-                    mobileMenu.classList.add("showMenu");
-                    mobileMenu.classList.remove("hideMenu");
+                    if (contentSection.classList.contains("hideMenu")) {
+                        contentSection.classList.remove("hideMenu");
+                        contentSection.classList.add("showMenu");
+                    } else {
+                        contentSection.classList.remove("showMenu");
+                        contentSection.classList.add("hideMenu");
+                    }
                 });
 
-                closeMenu.addEventListener("click", () => {
-                    mobileMenu.classList.remove("showMenu");
-                    mobileMenu.classList.add("hideMenu");
+                window.addEventListener("click", (e) => {
+                    if (
+                        e.target != contentSection &&
+                        e.target != menuButton &&
+                        contentSection.classList.contains("showMenu")
+                    ) {
+                        contentSection.classList.remove("showMenu");
+                        contentSection.classList.add("hideMenu");
+                    }
                 });
             }
+
+            addDropTrig("serviceDropTrig", "serviceDropdown");
+            addDropTrig("carsDropTrig", "carsDropdown");
         </script>
 
         <!-- Added Rellax Library -->
