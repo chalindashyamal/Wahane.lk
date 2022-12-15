@@ -68,3 +68,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* media quary for tab */
+@media only screen and (max-width: 950px) {
+    .card-container .card h1 {
+        font-size: 2em;
+    }
+    .card-container .card p {
+        font-size: 1em;
+    }
+}
