@@ -188,7 +188,7 @@ btn:active {
     top: 7em;
     right: 11em;
 
-    background-color: slategray;
+    background-color: rgba(112, 128, 144, 0.56);
     color: black;
     padding: 2em;
     border-radius: 1em;
@@ -199,7 +199,7 @@ btn:active {
     top: 7em;
     right: 2em;
 
-    background-color: slategray;
+    background-color: rgba(112, 128, 144, 0.56);
     color: black;
     padding: 2em;
     border-radius: 1em;
