@@ -48,7 +48,7 @@ body {
 
 .card-container .card {
     background: rgba(0, 251, 255, 0.614);
-    width: 20%;
+    width: 20vw;
     height: 25em;
     padding: 2em;
     border-radius: 20px;
@@ -104,6 +104,17 @@ body {
     scale: 1.1;
 }
 
+@media only screen and (max-width: 950px) {
+    .card-container {
+        overflow: auto;
+        gap: 2em;
+    }
+
+    .card {
+        width: 100vw;
+    }
+}
+
 /*.bg-video {
     position: relative;
     height: 100vh;
@@ -114,5 +125,3 @@ body {
     overflow: hidden;
     object-fit: cover;
 }*/
-
-

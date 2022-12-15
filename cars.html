@@ -14,6 +14,12 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
             rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
         <title>Cars</title>
     </head>
     <body id="top">
@@ -27,6 +33,42 @@
                 <li><a href="#">Cars</a></li>
                 <li><a href="#">About University</a></li>
             </ul>
+            <i id="menuButton" class="fa-solid fa-bars"></i>
         </div>
+        <!-- Added Mobile Menu Modal And Script -->
+        <div class="modal hideMenu" id="mobileMenu">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Menu</h2>
+                    <i id="closeMenu" class="fa-solid fa-times"></i>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/index.html#contact">Contact</a></li>
+                        <li><a href="about us.html">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Cars</a></li>
+                        <li><a href="/university.html">About University</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const menuButton = document.getElementById("menuButton");
+            const mobileMenu = document.getElementById("mobileMenu");
+            const closeMenu = document.getElementById("closeMenu");
+
+            menuButton.addEventListener("click", () => {
+                mobileMenu.classList.add("showMenu");
+                mobileMenu.classList.remove("hideMenu");
+            });
+
+            closeMenu.addEventListener("click", () => {
+                mobileMenu.classList.remove("showMenu");
+                mobileMenu.classList.add("hideMenu");
+            });
+        </script>
     </body>
 </html>
