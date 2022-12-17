@@ -15,7 +15,7 @@
             integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer" />
-        <title>About Us</title>
+        <title>Audi More Info</title>
     </head>
     <body>
         <div class="nav">
@@ -28,6 +28,17 @@
                 <li><a href="#">Cars</a></li>
                 <li><a href="/university.html">About University</a></li>
             </ul>
+            <!-- Dropdown -->
+            <ul class="hideMenu" id="serviceDropdown">
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Info</a></li>
+                <li><a href="#">Map</a></li>
+            </ul>
+            <ul class="hideMenu" id="carsDropdown">
+                <li><a href="/cars.html">Sport</a></li>
+                <li><a href="#">Classic</a></li>
+                <li><a href="#">Luxury</a></li>
+            </ul>
             <!-- Added Menu Button -->
             <i id="menuButton" class="fa-solid fa-bars"></i>
         </div>
@@ -35,20 +46,32 @@
         <!-- About us card section -->
         <div class="parent white">
             <div class="about-card">
-                <h2>header</h2>
-                <p>Your Description</p>
+                <img src="sec02/001.jpg" />
+                <div class="layer">
+                    <h2>header</h2>
+                    <p>Your Description</p>
+                </div>
             </div>
             <div class="about-card">
-                <h2>header</h2>
-                <p>Your Description</p>
+                <img src="sec02/001.jpg" />
+                <div class="layer">
+                    <h2>header</h2>
+                    <p>Your Description</p>
+                </div>
             </div>
             <div class="about-card">
-                <h2>header</h2>
-                <p>Your Description</p>
+                <img src="sec02/001.jpg" />
+                <div class="layer">
+                    <h2>header</h2>
+                    <p>Your Description</p>
+                </div>
             </div>
             <div class="about-card">
-                <h2>header</h2>
-                <p>Your Description</p>
+                <img src="sec02/001.jpg" />
+                <div class="layer">
+                    <h2>header</h2>
+                    <p>Your Description</p>
+                </div>
             </div>
         </div>
         <!-- footer -->
@@ -92,6 +115,38 @@
                 mobileMenu.classList.remove("showMenu");
                 mobileMenu.classList.add("hideMenu");
             });
+        </script>
+
+        <!-- Dropdown Function -->
+        <script>
+            function addDropTrig(triggerID, contentID) {
+                const menuButton = document.getElementById(triggerID);
+                const contentSection = document.getElementById(contentID);
+
+                menuButton.addEventListener("click", () => {
+                    if (contentSection.classList.contains("hideMenu")) {
+                        contentSection.classList.remove("hideMenu");
+                        contentSection.classList.add("showMenu");
+                    } else {
+                        contentSection.classList.remove("showMenu");
+                        contentSection.classList.add("hideMenu");
+                    }
+                });
+
+                window.addEventListener("click", (e) => {
+                    if (
+                        e.target != contentSection &&
+                        e.target != menuButton &&
+                        contentSection.classList.contains("showMenu")
+                    ) {
+                        contentSection.classList.remove("showMenu");
+                        contentSection.classList.add("hideMenu");
+                    }
+                });
+            }
+
+            addDropTrig("serviceDropTrig", "serviceDropdown");
+            addDropTrig("carsDropTrig", "carsDropdown");
         </script>
     </body>
 </html>
