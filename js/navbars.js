@@ -1,6 +1,6 @@
 const topnav = `
         <div class="nav">
-            <img src="img/logo.png" class="logo" />
+        <a href="/index.html"><img src="img/logo.png " class="logo" /></a>
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/index.html#contact">Contact</a></li>
@@ -12,13 +12,12 @@ const topnav = `
             <!-- Dropdown -->
             <ul class="hideMenu" id="serviceDropdown">
                 <li><a href="#">Help</a></li>
-                <li><a href="#">Info</a></li>
                 <li><a href="#">Map</a></li>
             </ul>
             <ul class="hideMenu" id="carsDropdown">
-                <li><a href="#">Sport</a></li>
-                <li><a href="#">Classic</a></li>
-                <li><a href="#">Luxury</a></li>
+                <li><a href="/cars.html">Sport</a></li>
+                <li><a href="/Classic.html">Classic</a></li>
+                <li><a href="/Luxury.html">Luxury</a></li>
             </ul>
             <!-- Added Menu Button -->
             <i id="menuButton" class="fa-solid fa-bars"></i>
@@ -45,7 +44,6 @@ const mobilenav = `
                         >
                             <ul id="serviceDropdown">
                                 <li><a href="#">Help</a></li>
-                                <li><a href="#">Info</a></li>
                                 <li><a href="#">Map</a></li>
                             </ul>
                         </li>
@@ -55,9 +53,9 @@ const mobilenav = `
                             class="mobileMenuDropdown hideMenu"
                         >
                             <ul id="carsDropdown">
-                                <li><a href="#">Sport</a></li>
-                                <li><a href="#">Classic</a></li>
-                                <li><a href="#">Luxury</a></li>
+                                <li><a href="/cars.html">Sport</a></li>
+                                <li><a href="/Classic.html">Classic</a></li>
+                                <li><a href="/Luxury.html">Luxury</a></li>
                             </ul>
                         </li>
                         <li><a href="/university.html">About University</a></li>

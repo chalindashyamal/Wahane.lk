@@ -18,19 +18,14 @@
         <title>About Us</title>
     </head>
     <body>
-        <div class="nav">
-            <a href="/index.html"><img src="img/logo.png" class="logo" /></a>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/index.html#contact">Contact</a></li>
-                <li><a href="/about us.html">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Cars</a></li>
-                <li><a href="/university.html">About University</a></li>
-            </ul>
-            <!-- Added Menu Button -->
-            <i id="menuButton" class="fa-solid fa-bars"></i>
-        </div>
+        <!-- Top Navbar -->
+        <div id="topNav"></div>
+
+        <!-- Mobile Navbar -->
+        <div id="mobileNav"></div>
+
+        <!-- Navbar Script -->
+        <script src="/js/navbars.js"></script>
 
         <!-- About us card section -->
         <div class="parent white">
@@ -77,26 +72,6 @@
                 <h4>© Wahane.net | All Right Reserved 2022</h4>
             </div>
         </section>
-
-        <!-- Added Mobile Menu Modal And Script -->
-        <div class="modal hideMenu" id="mobileMenu">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Menu</h2>
-                    <i id="closeMenu" class="fa-solid fa-times"></i>
-                </div>
-                <div class="modal-body">
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/index.html#contact">Contact</a></li>
-                        <li><a href="about us.html">About Us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Cars</a></li>
-                        <li><a href="/university.html">About University</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
         <script>
             const menuButton = document.getElementById("menuButton");
