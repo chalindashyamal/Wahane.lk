@@ -321,6 +321,11 @@ btn:active {
     color: black;
 }
 
+.modal#mobileMenu .modal-body ul ul li a {
+    text-decoration: none;
+    color: red;
+}
+
 /* media quary for tab */
 @media only screen and (max-width: 950px) {
     #container01 {
