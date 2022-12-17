@@ -22,6 +22,14 @@
     min-width: 200px;
     min-height: 300px;
     margin: 2em;
+    transition: 0.3s ease-in-out;
+}
+.about-card:hover,
+.about-card:focus,
+about-card:active {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .about-card img {
