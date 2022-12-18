@@ -68,3 +68,19 @@
 .about-card p {
     color: aliceblue;
 }
+.header h1 {
+    font-size: 70px;
+    line-height: 70px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    background: url("cars img/back.png");
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 90s linear infinite;
+}
+@keyframes back {
+    100% {
+        background-position: 20000px 0;
+    }
+}
