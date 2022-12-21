@@ -1,4 +1,6 @@
 .parent {
+    box-sizing: border-box;
+    padding-right: 2em;
     padding-top: 5em;
     display: grid;
     grid-gap: 1rem;
@@ -68,6 +70,16 @@
 .about-card p {
     color: aliceblue;
 }
+
+.about-card .layer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
 .header h1 {
     font-size: 70px;
     line-height: 70px;
@@ -79,6 +91,14 @@
     background-position: 0 0;
     animation: back 90s linear infinite;
 }
+
+.verticle-text {
+    width: 1.5em;
+    height: auto;
+    word-break: break-all;
+    font-size: 150%;
+}
+
 @keyframes back {
     100% {
         background-position: 20000px 0;

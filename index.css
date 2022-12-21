@@ -70,6 +70,15 @@ btn:active {
         url(img/03.jpg);
     background-attachment: fixed;
 }
+
+#container05 {
+    background-image: linear-gradient(
+            rgba(11, 3, 44, 0.588),
+            rgba(21, 17, 42, 0.534)
+        ),
+        url(img/01.jpg);
+    background-attachment: fixed;
+}
 #contact {
     background-image: linear-gradient(
             rgba(11, 3, 44, 0.588),

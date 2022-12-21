@@ -11,7 +11,7 @@ const topnav = `
             </ul>
             <!-- Dropdown -->
             <ul class="hideMenu" id="serviceDropdown">
-                <li><a href="#">Help</a></li>
+                <li><a href="/help info.html">Help</a></li>
                 <li><a href="#">Map</a></li>
             </ul>
             <ul class="hideMenu" id="carsDropdown">
@@ -43,7 +43,7 @@ const mobilenav = `
                             class="mobileMenuDropdown hideMenu"
                         >
                             <ul id="serviceDropdown">
-                                <li><a href="#">Help</a></li>
+                                <li><a href="/help info.html">Help</a></li>
                                 <li><a href="#">Map</a></li>
                             </ul>
                         </li>
