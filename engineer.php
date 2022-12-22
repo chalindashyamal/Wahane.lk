@@ -12,6 +12,15 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="admin.css" />
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E9679N0H6C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E9679N0H6C');
+</script>
     </head>
     <body>
         <!-- Navigation bar -->
