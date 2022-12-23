@@ -11,7 +11,7 @@
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="admin.css" />
+        <link rel="stylesheet" href="../admin/admin.css" />
         <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-E9679N0H6C"></script>
 <script>
@@ -96,10 +96,7 @@
                     */
 
                     // Get all the tickets from the database where completed = 0 and display them as cards
-                    $servername = "localhost";
-                    $username = "wahanene_admin";
-                    $password = "f,N}{FOuvs,t";
-                    $database = "wahanene_wahane.net";
+                    include '../server.php';
 
                     // Create connection
                     $conn = new mysqli($servername, $username, $password, $database);
@@ -170,10 +167,8 @@
                         </div>
                         */
 
-                        $servername = "localhost";
-                        $username = "wahanene_admin";
-                        $password = "f,N}{FOuvs,t";
-                        $database = "wahanene_wahane.net";
+                    include '../server.php';
+
 
                     // Create connection
                     $conn = new mysqli($servername, $username, $password, $database);

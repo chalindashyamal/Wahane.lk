@@ -51,9 +51,9 @@ CREATE TABLE `complaint` (
 
 CREATE TABLE `customer` (
   `Customer_ID` int(11) NOT NULL,
-  `Customer_Name` varchar(254) DEFAULT NULL,
-  `Customer_Email` int(11) DEFAULT NULL,
-  `Reapair_Count` int(11) DEFAULT NULL
+  `Customer_Name` varchar(255) DEFAULT NULL,
+  `Customer_Email` varchar(255) DEFAULT NULL,
+  `Repair_Count` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -98,7 +98,7 @@ ALTER TABLE `engineer`
 -- AUTO_INCREMENT for table `complaint`
 --
 ALTER TABLE `complaint`
-  MODIFY `Complaint_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `Complaint_ID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `customer`
