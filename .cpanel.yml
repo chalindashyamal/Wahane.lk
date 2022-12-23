@@ -2,4 +2,4 @@
 deployment:
     tasks:
         - export DEPLOYPATH=/home/wahanene/public_html/
-        - /bin/cp -r /src/* $DEPLOYPATH
+        - /bin/cp -r * $DEPLOYPATH
