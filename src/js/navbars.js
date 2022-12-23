@@ -3,7 +3,7 @@ const topnav = `
         <a href="/index.php"><img src="img/logo.png " class="logo" /></a>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/index.php#contact">Contact</a></li>
+                <li><a href="/#contact">Contact</a></li>
                 <li><a href="about us.html">About Us</a></li>
                 <li><a id="serviceDropTrig" href="#">Services</a></li>
                 <li><a id="carsDropTrig" href="#">Cars</a></li>
@@ -33,7 +33,7 @@ const mobilenav = `
                 <div class="modal-body">
                     <ul>
                         <li><a href="/">Home</a></li>
-                        <li><a href="/index.php#contact">Contact</a></li>
+                        <li><a href="/#contact">Contact</a></li>
                         <li><a href="about us.html">About Us</a></li>
                         <li>
                             <a href="#" id="servicesMobileDroptrig">Services</a>
