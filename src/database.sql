@@ -39,10 +39,6 @@ CREATE TABLE `complaint` (
   `e_comp` int(11) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `complaint`
---
-
 -- --------------------------------------------------------
 
 --
