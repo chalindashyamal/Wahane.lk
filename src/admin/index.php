@@ -59,8 +59,7 @@
                     <h2>New Tickets</h2>
                     
                     <div class="container" id="request-list">
-                    <?php 
-
+                    <?php
                     /* Card Template
 
                     <div class="card">
@@ -96,57 +95,106 @@
                     */
 
                     // Get all the tickets from the database where completed = 0 and display them as cards
-                    $servername = "localhost";
-                    $username = "wahanene_admin";
-                    $password = "f,N}{FOuvs,t";
-                    $database = "wahanene_wahane.net";
+                    include "../server.php";
 
                     // Create connection
-                    $conn = new mysqli($servername, $username, $password, $database);
+                    $conn = new mysqli(
+                    	$servername,
+                    	$username,
+                    	$password,
+                    	$database
+                    );
 
                     // Check connection
                     if ($conn->connect_error) {
-                        die("Connection failed: " . $conn->connect_error);
+                    	die("Connection failed: " . $conn->connect_error);
                     }
 
                     $sql = "SELECT * FROM complaint WHERE completed = 0";
                     $result = $conn->query($sql);
 
                     if ($result->num_rows > 0) {
-                        // output data of each row
-                        while($row = $result->fetch_assoc()) {
-                            echo "<div class='card'>
-                            <div class='card-header'>
-                                #".$row["Complaint_ID"]." - ".$row["Subject"]."
-                            </div>
-                            <div class='card-body'>
-                                <h4 class='card-title '>".$row["Customer_name"]."</h4>
-                                <p class='card-text'>
-                                    ".$row["Message"]."
-                                </p>
-                            </div>
-                            <div class='card-footer text-muted'>
-                                <div
-                                    class='btn-group'
-                                    role='group'
-                                    aria-label='Basic mixed styles example'
-                                >
-                                    
-                                    <a href='/allowEngineer.php?id=".$row["Complaint_ID"]."' type='button' class='btn btn-link'>
-                                        Send To Engineer
-                                    </a>
-                                    <a href='/updateComplaint.php?id=".$row["Complaint_ID"]."' type='button' class='btn btn-link'>
-                                        Mark as Completed
-                                    </a>
-                                    <a href='/deleteComplaint.php?id=".$row["Complaint_ID"]."' type='button' class='btn btn-link'>
-                                        Delete
-                                    </a>
-                                </div>
-                            </div>
-                        </div>";
-                        }
+                    	// output data of each row
+                    	while ($row = $result->fetch_assoc()) {
+                    		$es_badge = "";
+                    		if ($row["e_stat"]) {
+                    			$es_badge =
+                    				'<span class=\'badge text-bg-warning\'>Sent to Engineer</span>';
+                    		} else {
+                    			$es_badge = "";
+                    		}
+
+                    		$ec_badge = "";
+                    		if ($row["e_comp"]) {
+                    			$ec_badge =
+                    				'<span class=\'badge text-bg-success\'>Completed by Engineer</span>';
+                    		} else {
+                    			$ec_badge = "";
+                    		}
+
+                    		$ebutton = "";
+                    		if (!$row["e_stat"]) {
+                    			$ebutton =
+                    				"<a href='/allowEngineer.php?id=" .
+                    				$row["Complaint_ID"] .
+                    				"' type='button' class='btn btn-link'>
+                                                Send To Engineer
+                                            </a>";
+                    		} else {
+                    			$ebutton = "";
+                    		}
+
+                    		$cardout =
+                    			"<div class='card'>
+                                            <div class='card-header'>
+                                                #" .
+                    			$row["Complaint_ID"] .
+                    			" - " .
+                    			$row["Subject"] .
+                    			" 
+                                                " .
+                    			$es_badge .
+                    			" " .
+                    			$ec_badge .
+                    			"
+                                            </div>
+                                            <div class='card-body'>
+                                                <h4 class='card-title '>" .
+                    			$row["Customer_name"] .
+                    			"</h4>
+                                                <p class='card-text'>
+                                                    " .
+                    			$row["Message"] .
+                    			"
+                                                </p>
+                                            </div>
+                                            <div class='card-footer text-muted'>
+                                                <div
+                                                    class='btn-group'
+                                                    role='group'
+                                                    aria-label='Basic mixed styles example'
+                                                >
+                                                    
+                                                    " .
+                    			$ebutton .
+                    			"
+                                                    <a href='/updateComplaint.php?id=" .
+                    			$row["Complaint_ID"] .
+                    			"' type='button' class='btn btn-link'>
+                                                        Mark as Completed
+                                                    </a>
+                                                    <a href='/deleteComplaint.php?id=" .
+                    			$row["Complaint_ID"] .
+                    			"' type='button' class='btn btn-link'>
+                                                        Delete
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>";
+                    		echo "$cardout";
+                    	}
                     } else {
-                        echo "0 results";
+                    	echo "0 results";
                     }
                     $conn->close();
                     ?>
@@ -156,56 +204,49 @@
                     <h2>Completed Tickets</h2>
                     <div class="container" id="request-list">
                         <?php
-                        /* Card Template
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    Ticket #Number - Message Subject
-                                </h5>
-                                <p class="card-text">
-                                    Message content with the problem the user
-                                    has
-                                </p>
-                            </div>
-                        </div>
-                        */
+                        include "../server.php";
 
-                        $servername = "localhost";
-                        $username = "wahanene_admin";
-                        $password = "f,N}{FOuvs,t";
-                        $database = "wahanene_wahane.net";
+                        // Create connection
+                        $conn = new mysqli(
+                        	$servername,
+                        	$username,
+                        	$password,
+                        	$database
+                        );
 
-                    // Create connection
-                    $conn = new mysqli($servername, $username, $password, $database);
+                        // Check connection
+                        if ($conn->connect_error) {
+                        	die("Connection failed: " . $conn->connect_error);
+                        }
 
-                    // Check connection
-                    if ($conn->connect_error) {
-                        die("Connection failed: " . $conn->connect_error);
-                    }
+                        $sql = "SELECT * FROM complaint WHERE completed = 1";
 
-                    $sql = "SELECT * FROM complaint WHERE completed = 1";
+                        $result = $conn->query($sql);
 
-                    $result = $conn->query($sql);
-
-                    if ($result->num_rows > 0) {
-                        // output data of each row
-                        while($row = $result->fetch_assoc()) {
-                            echo "<div class='card'>
+                        if ($result->num_rows > 0) {
+                        	// output data of each row
+                        	while ($row = $result->fetch_assoc()) {
+                        		echo "<div class='card'>
                             <div class='card-body'>
                                 <h5 class='card-title '>
-                                    Ticket #".$row["Complaint_ID"]." - ".$row["Subject"]." 
+                                    Ticket #" .
+                        			$row["Complaint_ID"] .
+                        			" - " .
+                        			$row["Subject"] .
+                        			" 
                                 </h5>
                                 <p class='card-text'>
-                                    ".$row["Message"]."     
+                                    " .
+                        			$row["Message"] .
+                        			"     
                                 </p>
                             </div>
                         </div>";
+                        	}
+                        } else {
+                        	echo "0 results";
                         }
-                    } else {
-                        echo "0 results";
-                    }
-                    $conn->close();
-                    
+                        $conn->close();
                         ?>
                     </div>
                 </div>
