@@ -7,6 +7,9 @@
         <link rel="stylesheet" href="index.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        		<link
+			rel="stylesheet"
+			href="nav.css" />
         <link
             href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap"
             rel="stylesheet" />
