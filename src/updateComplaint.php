@@ -1,22 +1,22 @@
 <?php
-include 'server.php';
+include "server.php";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
 $complaintID = $_GET["id"];
 
 if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+	die("Connection failed: " . $conn->connect_error);
 }
 
 $sql = "UPDATE complaint SET Completed = 1 WHERE Complaint_ID = '$complaintID'";
 
-if ($conn-> query($sql) === TRUE) {
+if ($conn->query($sql) === true) {
 } else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
+	echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
 $conn->close();
 
-header('Location: /admin');
+header("Location: /admin");
 ?>
