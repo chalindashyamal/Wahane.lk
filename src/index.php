@@ -50,33 +50,33 @@
         <!--1 img sec-->
         <div class="container" id="container01">
             <div class="hero rellax" data-rellax-speed="5">
-                <h1>Brand New Mk1 & Mk2</h1>
-                <h3>Road, Track or Rally</h3>
-                <h5>A true classic with a modern twist</h5>
+                <h1>Wahane.net</h1>
+                <h3>Wheels Like<br> Never Before</h3>
+                <h5>Classic, Sports and Luxury<br> cars in Sri Lanka</h5>
             </div>
         </div>
         <!--2 img sec-->
         <div class="container" id="container02">
             <div class="hero rellax" data-rellax-speed="2.5">
-                <h1>Brand New Mk1 & Mk2</h1>
-                <h3>Road, Track or Rally</h3>
-                <h5>A true classic with a modern twist</h5>
+                <h1>Sports cars</h1>
+                <h3>The Ultimate<br> Driving Machines</h3>
+                <h5>Some of the best sports cars in the island</h5>
                 <a href="/cars.html" class="btn">More Information</a>
             </div>
         </div>
         <!--3 img sec-->
         <div class="container" id="container05">
             <div class="hero rellax" data-rellax-speed="2.5">
-                <h1>Brand New Mk1 & Mk2</h1>
-                <h3>Road, Track or Rally</h3>
-                <h5>A true classic with a modern twist</h5>
+                <h1>Classic Cars</h1>
+                <h3>A True Vintage Experience</h3>
+                <h5></h5>
                 <a href="/Classic.html" class="btn">More Information</a>
             </div>
         </div>
         <!--4 img sec-->
         <div class="container" id="container03">
             <div class="hero rellax" data-rellax-speed="1.25">
-                <h1>Brand New Mk1 & Mk2</h1>
+                <h1>Luxury Cars</h1>
                 <h3>Road, Track or Rally</h3>
                 <h5>A true classic with a modern twist</h5>
                 <a href="/Luxury.html" class="btn">More Information</a>
@@ -109,26 +109,26 @@
                             name="subject"
                             id="subject"
                             required
-                            placeholder="What is this query about" />
+                            placeholder="Your issue in general" />
                         <input
                             type="text"
                             name="message"
                             id="v"
                             required
-                            placeholder="Enter your message" />
+                            placeholder="Issue explained" />
                         <input type="submit" id="submit-btn" />
                     </form>
                 </div>
             </div>
             <div id="bottom">
                 <div id="smcontainer">
-                    <a href="#" target="_blank" title="facebook"
+                    <a href="https://www.facebook.com/profile.php?id=100089088097551" target="_blank" title="facebook"
                         ><i class="fa-brands fa-facebook"></i
                     ></a>
-                    <a href="#" target="_blank" title="email"
+                    <a href="mailto:wahane.net@gmail.com" target="_blank" title="email"
                         ><i class="fa-solid fa-envelope"></i
                     ></a>
-                    <a href="#" target="_blank" title="instagram"
+                    <a href="https://www.instagram.com/wahane.net_/" target="_blank" title="instagram"
                         ><i class="fa-brands fa-instagram"></i
                     ></a>
                 </div>

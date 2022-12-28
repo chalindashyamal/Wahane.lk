@@ -3,7 +3,7 @@ const topnav = `
         <a href="/index.php"><img src="img/logo.png " class="logo" /></a>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/#contact">Contact</a></li>
+                <li><a href="/#contact">Tech Support</a></li>
                 <li><a href="about us.html">About Us</a></li>
                 <li><a id="serviceDropTrig" href="#">Services</a></li>
                 <li><a id="carsDropTrig" href="#">Cars</a></li>
@@ -12,7 +12,7 @@ const topnav = `
             <!-- Dropdown -->
             <ul class="hideMenu" id="serviceDropdown">
                 <li><a href="/help info.html">Help</a></li>
-                <li><a href="#">Map</a></li>
+                
             </ul>
             <ul class="hideMenu" id="carsDropdown">
                 <li><a href="/cars.html">Sport</a></li>
@@ -33,7 +33,7 @@ const mobilenav = `
                 <div class="modal-body">
                     <ul>
                         <li><a href="/">Home</a></li>
-                        <li><a href="/#contact">Contact</a></li>
+                        <li><a href="/#Tech Support">Contact</a></li>
                         <li><a href="about us.html">About Us</a></li>
                         <li>
                             <a href="#" id="servicesMobileDroptrig">Services</a>
@@ -44,7 +44,7 @@ const mobilenav = `
                         >
                             <ul id="serviceDropdown">
                                 <li><a href="/help info.html">Help</a></li>
-                                <li><a href="#">Map</a></li>
+                                
                             </ul>
                         </li>
                         <li><a href="#" id="carsMobileDroptrig">Cars</a></li>
@@ -75,39 +75,39 @@ const mobileMenu = document.getElementById("mobileMenu");
 const closeMenu = document.getElementById("closeMenu");
 
 menuButton.addEventListener("click", () => {
-	mobileMenu.classList.add("showMenu");
-	mobileMenu.classList.remove("hideMenu");
+    mobileMenu.classList.add("showMenu");
+    mobileMenu.classList.remove("hideMenu");
 });
 
 closeMenu.addEventListener("click", () => {
-	mobileMenu.classList.remove("showMenu");
-	mobileMenu.classList.add("hideMenu");
+    mobileMenu.classList.remove("showMenu");
+    mobileMenu.classList.add("hideMenu");
 });
 
 const addDropTrig = (triggerID, contentID) => {
-	const menuButton = document.getElementById(triggerID);
-	const contentSection = document.getElementById(contentID);
+    const menuButton = document.getElementById(triggerID);
+    const contentSection = document.getElementById(contentID);
 
-	menuButton.addEventListener("click", () => {
-		if (contentSection.classList.contains("hideMenu")) {
-			contentSection.classList.remove("hideMenu");
-			contentSection.classList.add("showMenu");
-		} else {
-			contentSection.classList.remove("showMenu");
-			contentSection.classList.add("hideMenu");
-		}
-	});
+    menuButton.addEventListener("click", () => {
+        if (contentSection.classList.contains("hideMenu")) {
+            contentSection.classList.remove("hideMenu");
+            contentSection.classList.add("showMenu");
+        } else {
+            contentSection.classList.remove("showMenu");
+            contentSection.classList.add("hideMenu");
+        }
+    });
 
-	window.addEventListener("click", (e) => {
-		if (
-			e.target != contentSection &&
-			e.target != menuButton &&
-			contentSection.classList.contains("showMenu")
-		) {
-			contentSection.classList.remove("showMenu");
-			contentSection.classList.add("hideMenu");
-		}
-	});
+    window.addEventListener("click", (e) => {
+        if (
+            e.target != contentSection &&
+            e.target != menuButton &&
+            contentSection.classList.contains("showMenu")
+        ) {
+            contentSection.classList.remove("showMenu");
+            contentSection.classList.add("hideMenu");
+        }
+    });
 };
 
 addDropTrig("serviceDropTrig", "serviceDropdown");
