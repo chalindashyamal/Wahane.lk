@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "poppins", sans-serif;
+    font-family: "Orbitron", sans-serif;
     box-sizing: border-box;
 }
 html {
@@ -13,7 +13,7 @@ body {
         url("about_car_img/02.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    color: #fff;
+    color: rgb(0, 0, 0);
     position: relative;
 }
 /*about*/
@@ -132,17 +132,26 @@ body {
     width: fit-content;
     border: 1px solid #00ffcc;
     padding: 14px 50px;
-    border-radius: 6px;
+    border-radius: 20px;
     text-decoration: none;
     color: #fff;
     transition: background 0.5s;
 }
 .btn:hover {
     background: #00ffcc;
+    color: #000000;
 }
 
 .carousel-container {
     padding: 2em 4em;
+}
+/*img slide*/
+.carousel-inner h3 {
+    color: #000000;
+}
+
+.carousel-inner p {
+    color: #000000;
 }
 
 @media only screen and (max-width: 950px) {
