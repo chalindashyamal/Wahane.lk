@@ -17,12 +17,14 @@
     background: #5ff0d58a;
     border-radius: 1em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
     padding: 1em;
     text-align: center;
     min-width: 200px;
     min-height: 300px;
     margin: 2em;
     transition: 0.3s ease-in-out;
+    width: 90%;
 }
 .about-card:hover,
 .about-card:focus,
@@ -43,4 +45,5 @@ about-card:active {
 .about-card h5 {
     color: rgb(181, 181, 181);
     margin-bottom: 1em;
+    word-wrap: break-word;
 }
