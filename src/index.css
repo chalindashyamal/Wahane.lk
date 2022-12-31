@@ -28,7 +28,7 @@ body {
             rgba(11, 3, 44, 0.588),
             rgba(21, 17, 42, 0.534)
         ),
-        url(img/02.jpg);
+        url(img/03.jpg);
     background-attachment: fixed;
 }
 
@@ -37,7 +37,7 @@ body {
             rgba(11, 3, 44, 0.588),
             rgba(21, 17, 42, 0.534)
         ),
-        url(img/04.jpg);
+        url(img/05.jpg);
     background-attachment: fixed;
 }
 .btn {
@@ -67,7 +67,7 @@ btn:active {
             rgba(11, 3, 44, 0.588),
             rgba(21, 17, 42, 0.534)
         ),
-        url(img/03.jpg);
+        url(img/04.jpg);
     background-attachment: fixed;
 }
 
@@ -84,7 +84,7 @@ btn:active {
             rgba(11, 3, 44, 0.588),
             rgba(21, 17, 42, 0.534)
         ),
-        url(img/05.jpg);
+        url(img/03.jpg);
 
     display: flex;
     flex-direction: column;
@@ -261,7 +261,7 @@ btn:active {
                 rgba(11, 3, 44, 0.588),
                 rgba(21, 17, 42, 0.534)
             ),
-            url(img/02.jpg);
+            url(img/01.jpg);
         background-attachment: fixed;
     }
 

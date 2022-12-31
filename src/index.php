@@ -68,8 +68,8 @@
         <div class="container" id="container05">
             <div class="hero rellax" data-rellax-speed="2.5">
                 <h1>Classic Cars</h1>
-                <h3>A True Vintage Experience</h3>
-                <h5></h5>
+                <h3>The Elegant Timeless Beasts</h3>
+                <h5> A true vintage experience</h5>
                 <a href="/Classic.html" class="btn">More Information</a>
             </div>
         </div>
@@ -77,8 +77,8 @@
         <div class="container" id="container03">
             <div class="hero rellax" data-rellax-speed="1.25">
                 <h1>Luxury Cars</h1>
-                <h3>Road, Track or Rally</h3>
-                <h5>A true classic with a modern twist</h5>
+                <h3>"Your Dream<br> Opulent Ride"</h3>
+                <h5> The vogue of modern cars</h5>
                 <a href="/Luxury.html" class="btn">More Information</a>
             </div>
         </div>
@@ -86,9 +86,9 @@
         <div class="container" id="contact">
             <div id="top">
                 <div class="hero">
-                    <h1>Brand New Mk1 & Mk2</h1>
-                    <h3>Road, Track or Rally</h3>
-                    <h5>A true classic with a modern twist</h5>
+                    <h1>Contact Us</h1>
+                    <h3>Send us your problems</h3>
+                    <h5>We will provide you<br> with proffessional solutions</h5>
                 </div>
                 <div class="card">
                     <form action="submitForm.php" method="post">
