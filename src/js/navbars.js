@@ -43,7 +43,7 @@ const mobilenav = `
                                 <li><a href="/Luxury.html">Luxury</a></li>
                             </ul>
                         </li>
-                        <li><a href="/#Tech Support">Contact Us</a></li>
+                        <li><a href="/#contact">Contact Us</a></li>
                         
                         <li>
                             <a href="/help info.html" id="servicesMobileDroptrig">Services</a>
