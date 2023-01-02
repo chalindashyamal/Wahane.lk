@@ -106,3 +106,25 @@
         background-position: 20000px 0;
     }
 }
+
+/* media quary for tab */
+@media only screen and (max-width: 950px) {
+    .parent {
+        box-sizing: border-box;
+        padding-right: 2em;
+        padding-top: 5em;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        min-height: 100vh;
+        background-image: linear-gradient(
+                rgba(11, 3, 44, 0.588),
+                rgba(21, 17, 42, 0.534)
+            ),
+            url(about_car_img/ran7.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        place-items: center;
+        background-repeat: no-repeat;
+    }
+}

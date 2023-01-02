@@ -268,7 +268,39 @@ btn:active {
                 rgba(11, 3, 44, 0.588),
                 rgba(21, 17, 42, 0.534)
             ),
-            url(img/03.jpg);
+            url(about_car_img/rx1.jpg);
+        background-attachment: fixed;
+    }
+    #container02 {
+        background-image: linear-gradient(
+                rgba(11, 3, 44, 0.588),
+                rgba(21, 17, 42, 0.534)
+            ),
+            url(about_car_img/04.jpg);
+        background-attachment: fixed;
+    }
+    #container03 {
+        background-image: linear-gradient(
+                rgba(11, 3, 44, 0.588),
+                rgba(21, 17, 42, 0.534)
+            ),
+            url(about_car_img/ra1.jpg);
+        background-attachment: fixed;
+    }
+    #container05 {
+        background-image: linear-gradient(
+                rgba(11, 3, 44, 0.588),
+                rgba(21, 17, 42, 0.534)
+            ),
+            url(about_car_img/kp1.jpg);
+        background-attachment: fixed;
+    }
+    #contact {
+        background-image: linear-gradient(
+                rgba(11, 3, 44, 0.588),
+                rgba(21, 17, 42, 0.534)
+            ),
+            url(about_car_img/tu1.jpg);
         background-attachment: fixed;
     }
 
