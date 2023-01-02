@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "kizard";
+    font-family: "Kizard";
     src: url("/fonts/kizard.ttf") format(truetype);
 }
 
@@ -28,7 +28,7 @@ body {
     position: relative;
 }
 .container h3 {
-    font-family: "kizard", sans-serif;
+    font-family: "Kizard", sans-serif;
 }
 #container01 {
     background-image: linear-gradient(
