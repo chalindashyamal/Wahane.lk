@@ -22,7 +22,9 @@ body {
     box-sizing: border-box;
     position: relative;
 }
-
+.container h3 {
+    font-family: kizard;
+}
 #container01 {
     background-image: linear-gradient(
             rgba(11, 3, 44, 0.588),

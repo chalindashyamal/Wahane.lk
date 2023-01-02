@@ -3,17 +3,16 @@ const topnav = `
         <a href="/index.php"><img src="img/logo.png " class="logo" /></a>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/#contact">Tech Support</a></li>
-                <li><a href="about us.html">About Us</a></li>
-                <li><a id="serviceDropTrig" href="#">Services</a></li>
                 <li><a id="carsDropTrig" href="#">Cars</a></li>
+                <li><a href="/#contact">Contact Us</a></li>
+                <li><a id="serviceDropTrig" href="/help info.html">Services</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                
+                
                 <li><a href="/university.html">About University</a></li>
             </ul>
             <!-- Dropdown -->
-            <ul class="hideMenu" id="serviceDropdown">
-                <li><a href="/help info.html">Help</a></li>
-                
-            </ul>
+            
             <ul class="hideMenu" id="carsDropdown">
                 <li><a href="/cars.html">Sport</a></li>
                 <li><a href="/Classic.html">Classic</a></li>
@@ -33,20 +32,6 @@ const mobilenav = `
                 <div class="modal-body">
                     <ul>
                         <li><a href="/">Home</a></li>
-                        <li><a href="/#Tech Support">Contact</a></li>
-                        <li><a href="about us.html">About Us</a></li>
-                        <li>
-                            <a href="#" id="servicesMobileDroptrig">Services</a>
-                        </li>
-                        <li
-                            id="servicesMobileDropdown"
-                            class="mobileMenuDropdown hideMenu"
-                        >
-                            <ul id="serviceDropdown">
-                                <li><a href="/help info.html">Help</a></li>
-                                
-                            </ul>
-                        </li>
                         <li><a href="#" id="carsMobileDroptrig">Cars</a></li>
                         <li
                             id="carsMobileDropdown"
@@ -58,6 +43,19 @@ const mobilenav = `
                                 <li><a href="/Luxury.html">Luxury</a></li>
                             </ul>
                         </li>
+                        <li><a href="/#Tech Support">Contact Us</a></li>
+                        
+                        <li>
+                            <a href="/help info.html" id="servicesMobileDroptrig">Services</a>
+                        </li>
+                        <li
+                            id="servicesMobileDropdown"
+                            class="mobileMenuDropdown hideMenu"
+                        >
+                            
+                        </li>
+                        <li><a href="about us.html">About Us</a></li>
+                        
                         <li><a href="/university.html">About University</a></li>
                     </ul>
                 </div>
