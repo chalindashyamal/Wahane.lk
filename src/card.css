@@ -116,4 +116,19 @@ h1 {
         justify-items: center;
         height: auto;
     }
+    .section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background-size: cover;
+        background-attachment: fixed;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+        background-image: linear-gradient(
+                rgba(11, 3, 44, 0.588),
+                rgba(21, 17, 42, 0.534)
+            ),
+            url(about_car_img/kp1.jpg);
+    }
 }
