@@ -27,9 +27,7 @@ body {
     box-sizing: border-box;
     position: relative;
 }
-.container h3 {
-    font-family: "Kizard", sans-serif;
-}
+
 #container01 {
     background-image: linear-gradient(
             rgba(11, 3, 44, 0.588),
@@ -100,6 +98,9 @@ btn:active {
     justify-content: center;
     align-items: center;
     gap: 2em;
+}
+#container01 p {
+    font-size: 1.5em;
 }
 
 #contact div#top {
