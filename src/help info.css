@@ -127,6 +127,10 @@ body {
     background-color: #2e2e2e;
 }
 
+.content h4 {
+    color: rgb(253, 253, 253);
+}
+
 @media only screen and (max-width: 950px) {
     .container2 {
         display: flex;
