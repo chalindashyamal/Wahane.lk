@@ -53,8 +53,9 @@
         <div class="container" id="container01">
             <div class="hero rellax" data-rellax-speed="5">
                 <h1>Wahane.net</h1>
-                <h3>Wheels Like<br> Never Before</h3>
-                <h5>Classic, Sports and Luxury<br> cars in Sri Lanka</h5>
+                <h4>"Wheels Like Never Before"</h4>
+                <h6>Classic, Sports and Luxury cars in Sri Lanka</h6>
+                <h6>We provide proffessional consultation for all the problems of your vehicle</h6>
             </div>
         </div>
         <!--2 img sec-->
