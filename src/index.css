@@ -29,10 +29,6 @@ body {
     @media (max-width: @iphone-screen) {
         background-attachment: scroll;
     }
-        @media (max-width: @iphone-screen) {
-        background-attachment: scroll;
-    }
-
 }
 
 #container01 {
@@ -286,13 +282,9 @@ btn:active {
         box-sizing: border-box;
         position: relative;
         text-align: center;
-           @media (max-width: @iphone-screen) {
-        background-attachment: scroll;
-    }
         @media (max-width: @iphone-screen) {
-        background-attachment: scroll;
-    }
-
+            background-attachment: scroll;
+        }
     }
 
     #container01 {
