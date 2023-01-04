@@ -26,9 +26,6 @@ body {
     padding-right: 5%;
     box-sizing: border-box;
     position: relative;
-    @media (max-width: @iphone-screen) {
-        background-attachment: scroll;
-    }
 }
 
 #container01 {
@@ -282,9 +279,9 @@ btn:active {
         box-sizing: border-box;
         position: relative;
         text-align: center;
-        @media (max-width: @iphone-screen) {
-            background-attachment: scroll;
-        }
+        -o-backgroung-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
     }
 
     #container01 {
@@ -300,7 +297,7 @@ btn:active {
                 rgba(11, 3, 44, 0.588),
                 rgba(21, 17, 42, 0.534)
             ),
-            url(about_car_img/rx7.jpg);
+            url(sec02/rx7.png);
         background-attachment: fixed;
     }
     #container03 {
@@ -316,7 +313,7 @@ btn:active {
                 rgba(11, 3, 44, 0.588),
                 rgba(21, 17, 42, 0.534)
             ),
-            url(about_car_img/e1.jpg);
+            url(sec02/e1.png);
         background-attachment: fixed;
     }
     #contact {
