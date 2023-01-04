@@ -297,7 +297,7 @@ btn:active {
                 rgba(11, 3, 44, 0.588),
                 rgba(21, 17, 42, 0.534)
             ),
-            url(sec02/rx7.png);
+            url(about_car_img/rx7.jpg);
         background-attachment: fixed;
     }
     #container03 {
@@ -313,7 +313,7 @@ btn:active {
                 rgba(11, 3, 44, 0.588),
                 rgba(21, 17, 42, 0.534)
             ),
-            url(sec02/e1.png);
+            url(about_car_img/e1.jpg);
         background-attachment: fixed;
     }
     #contact {
