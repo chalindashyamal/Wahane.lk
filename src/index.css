@@ -268,7 +268,6 @@ btn:active {
         margin: 0;
         padding: 0;
         font-family: "Orbitron", sans-serif;
-        text-align: center;
     }
     .container {
         height: 100vh;
@@ -279,6 +278,11 @@ btn:active {
         padding-right: 5%;
         box-sizing: border-box;
         position: relative;
+        text-align: center;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
     }
 
     #container01 {
@@ -286,7 +290,7 @@ btn:active {
                 rgba(11, 3, 44, 0.588),
                 rgba(21, 17, 42, 0.534)
             ),
-            url(about_car_img/rx1.jpg);
+            url(about_car_img/fl.jpg);
         background-attachment: fixed;
     }
     #container02 {
@@ -294,7 +298,7 @@ btn:active {
                 rgba(11, 3, 44, 0.588),
                 rgba(21, 17, 42, 0.534)
             ),
-            url(about_car_img/04.jpg);
+            url(about_car_img/rx7.jpg);
         background-attachment: fixed;
     }
     #container03 {
@@ -310,7 +314,7 @@ btn:active {
                 rgba(11, 3, 44, 0.588),
                 rgba(21, 17, 42, 0.534)
             ),
-            url(about_car_img/kp1.jpg);
+            url(about_car_img/e1.jpg);
         background-attachment: fixed;
     }
     #contact {
@@ -329,9 +333,10 @@ btn:active {
         justify-content: center;
         gap: 1.5em;
         color: #fff;
-        margin-left: 2em;
+        margin-left: 0;
         align-items: center;
         flex-wrap: nowrap;
+        margin: 0;
     }
 
     .hero h1 {
