@@ -37,7 +37,7 @@
             gtag("config", "G-E9679N0H6C");
         </script>
 <!-- tab icon-->
-        <link rel="icon" href="/img/logo.png">
+        <link rel="icon" href="/img/logo2.png">
     </head>
     <body id="top">
         <!-- Top Navbar -->
