@@ -26,6 +26,13 @@ body {
     padding-right: 5%;
     box-sizing: border-box;
     position: relative;
+    @media (max-width: @iphone-screen) {
+        background-attachment: scroll;
+    }
+        @media (max-width: @iphone-screen) {
+        background-attachment: scroll;
+    }
+
 }
 
 #container01 {
@@ -279,10 +286,13 @@ btn:active {
         box-sizing: border-box;
         position: relative;
         text-align: center;
-        -o-background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
-        background-size: cover;
+           @media (max-width: @iphone-screen) {
+        background-attachment: scroll;
+    }
+        @media (max-width: @iphone-screen) {
+        background-attachment: scroll;
+    }
+
     }
 
     #container01 {
