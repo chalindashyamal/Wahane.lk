@@ -89,7 +89,7 @@ btn:active {
             rgba(11, 3, 44, 0.588),
             rgba(21, 17, 42, 0.534)
         ),
-        url(img/01.jpg);
+        url(about_car_img/bg_last.jpg);
 
     display: flex;
     flex-direction: column;

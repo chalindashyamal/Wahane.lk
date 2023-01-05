@@ -127,4 +127,15 @@
         place-items: center;
         background-repeat: no-repeat;
     }
+    .header h1 {
+        margin-left: 60px;
+        margin-top: 50px;
+        font-size: 60px;
+        line-height: 40px;
+    }
+    .verticle-text {
+        width: 6em;
+        height: auto;
+        word-break: break-all;
+    }
 }

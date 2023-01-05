@@ -10,7 +10,7 @@
             rgba(11, 3, 44, 0.588),
             rgba(21, 17, 42, 0.534)
         ),
-        url(about_car_img/e2.jpg);
+        url(about_car_img/e3.jpg);
     background-size: cover;
     background-attachment: fixed;
     place-items: center;
@@ -125,5 +125,16 @@
         background-attachment: fixed;
         place-items: center;
         background-repeat: no-repeat;
+    }
+    .header h1 {
+        margin-left: 60px;
+        margin-top: 50px;
+        font-size: 60px;
+        line-height: 40px;
+    }
+    .verticle-text {
+        width: 6em;
+        height: auto;
+        word-break: break-all;
     }
 }

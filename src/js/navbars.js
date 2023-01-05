@@ -15,7 +15,7 @@ const topnav = `
             
             <ul class="hideMenu" id="carsDropdown">
                 <li><a href="/cars.html">Sport</a></li>
-                <li><a href="/Classic.html">Classic</a></li>
+                <li><a href="/Classic.html">Retro</a></li>
                 <li><a href="/Luxury.html">Luxury</a></li>
             </ul>
             <!-- Added Menu Button -->
@@ -38,9 +38,9 @@ const mobilenav = `
                             class="mobileMenuDropdown hideMenu"
                         >
                             <ul id="carsDropdown">
-                                <li><a href="/cars.html">Sport</a></li>
-                                <li><a href="/Classic.html">Classic</a></li>
-                                <li><a href="/Luxury.html">Luxury</a></li>
+                                <li><a href="/cars.html">Sports Cars</a></li>
+                                <li><a href="/Classic.html">Retro Cars</a></li>
+                                <li><a href="/Luxury.html">Luxury Cars</a></li>
                             </ul>
                         </li>
                         <li><a href="/#contact">Contact Us</a></li>

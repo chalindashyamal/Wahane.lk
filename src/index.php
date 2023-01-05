@@ -54,7 +54,7 @@
             <div class="hero rellax" data-rellax-speed="5">
                 <h1>Wahane.net</h1>
                 <h5>"Wheels Like Never Before"</h5><br>
-                <p>Classic, Sports and Luxury cars in Sri Lanka</p>
+                <p>Sports,Luxury and Retro cars in Sri Lanka</p>
                 <h3>We provide proffessional consultation<br>for all the problems of your vehicle</h3>
             </div>
         </div>
@@ -70,7 +70,7 @@
         <!--3 img sec-->
         <div class="container" id="container05">
             <div class="hero rellax" data-rellax-speed="2.5">
-                <h1>Classic Cars</h1>
+                <h1>Retro Cars</h1>
                 <h3>The Elegant Timeless Beasts</h3>
                 <h5> A true vintage experience</h5>
                 <a href="/Classic.html" class="btn">More Information</a>
