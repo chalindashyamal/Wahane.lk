@@ -55,7 +55,7 @@
                 <h1>Wahane.net</h1>
                 <h5>"Wheels Like Never Before"</h5><br>
                 <p>Sports,Luxury and Retro cars in Sri Lanka</p>
-                <h3>We provide proffessional consultation<br>for all the problems of your vehicle</h3>
+                <h3>We provide professional consultation<br>for all the problems of your vehicle</h3>
             </div>
         </div>
         <!--2 img sec-->
