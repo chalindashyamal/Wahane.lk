@@ -91,7 +91,7 @@
                 <div class="hero">
                     <h1>Contact Us</h1>
                     <h3>Send us your problems</h3>
-                    <h5>We will provide you<br> with proffessional solutions</h5>
+                    <h5>We will provide you<br> with professional solutions</h5>
                 </div>
                 <div class="card">
                     <form action="submitForm.php" method="post">
